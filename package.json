@@ -1,0 +1,62 @@
+{
+  "name": "npm-deps-update",
+  "version": "0.0.0",
+  "description": "Updater of NPM dependencies",
+  "keywords": [
+    "version",
+    "upgrades",
+    "updater",
+    "package",
+    "package.json",
+    "dependencies",
+    "updates",
+    "npm",
+    "find",
+    "check"
+  ],
+  "main": "lib/index.js",
+  "bin": {
+    "npm-deps-update": "./bin/npm-deps-update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eGavr/npm-deps-update.git"
+  },
+  "author": {
+    "name": "Evgeniy Gavryushin",
+    "email": "job.egavr@yandex.ru",
+    "url": "https://github.com/eGavr"
+  },
+  "bugs": {
+    "url": "https://github.com/eGavr/npm-deps-update/issues"
+  },
+  "homepage": "https://github.com/eGavr/npm-deps-update",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "cli-table": "^0.3.1",
+    "coa": "^1.0.1",
+    "github": "^0.2.3",
+    "inherit": "^2.2.2",
+    "lodash": "^3.7.0",
+    "npm": "^2.8.3",
+    "q": "^1.2.0",
+    "semver": "^4.3.3"
+  },
+  "devDependencies": {
+    "jscs": "^1.12.0",
+    "jshint": "^2.7.0"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "jshint . && jscs -c .jscs.js ."
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/eGavr/npm-deps-update/blob/master/LICENSE.txt"
+    }
+  ]
+}
